@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 100%;
+            background-color: aquamarine;
+        }
+        #todoList {
+            list-style-type: none;
+            padding: 0;
+            background-color: gray;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color:fuchsia;
+        }
+        .todo-item input[type="text"] {
+            flex: 1;
+            padding: 5px;
+        }
+        .buttons button {
+            margin-left: 10px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>To-Do List</h2>
+    <input type="text" id="newTask" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todoList"></ul>
+    <button onclick="saveTasks()">Save Tasks</button>
+    <button onclick="loadTasks()">Load Tasks</button>
+    <button onclick="clearTasks()">Clear Tasks</button>
+    <button onclick="completeTasks()">CompleteTasks</button>
+    <script src="Todo App1.js"></script>
+</body>
+</html>
